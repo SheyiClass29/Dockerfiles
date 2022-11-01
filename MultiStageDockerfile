@@ -4,7 +4,7 @@ FROM alpine/git as repo
 MAINTAINER mylandmarktech@gmail.com
 
 WORKDIR /app
-RUN https://github.com/SheyiClass29/maven-web-application.git
+RUN git clone https://github.com/SheyiClass29/maven-web-application.git
 #Maven
 FROM maven:3.5-jdk-8-alpine as build
 WORKDIR /app
